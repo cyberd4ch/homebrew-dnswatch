@@ -1,8 +1,8 @@
 class Dnswatch < Formula
   desc "Dependency-free DNS drift watcher for bug-bounty scopes and infra"
   homepage "https://github.com/cyberd4ch/dns-watch"
-  url "https://github.com/cyberd4ch/dns-watch/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "819c5649b6ef6bb9012a43e9e170b77e5537de78421889f404c8bd7342e1853a"
+  url "https://github.com/cyberd4ch/dns-watch/releases/download/v1.1.0/dnswatch-1.1.0.tar.gz"
+  sha256 "c896d5afaa9e8d2df7f2a89a5cda073ddced780125dde9ef029fabcb2b629116"
   license "MIT"
   head "https://github.com/cyberd4ch/dns-watch.git", branch: "main"
 
