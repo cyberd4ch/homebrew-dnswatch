@@ -25,6 +25,9 @@ class Dnswatch < Formula
   end
 
   test do
-    assert_match "1.1.0", shell_output("#{bin}/dnswatch --version")
+    # Version-agnostic on purpose: the tap is bumped by CI (dns-watch's
+    # tap-bump workflow), so the test must not pin a version string the
+    # bot does not update. Pinning happens via the URL + sha256.
+    assert_match(/[0-9]+\.[0-9]+\.[0-9]+/, shell_output("#{bin}/dnswatch --version"))
   end
 end
